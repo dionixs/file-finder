@@ -4,6 +4,7 @@ class Result
   end
 
   def print_result
+    puts "Found files: "
     @result.each do |item|
       puts item
     end
