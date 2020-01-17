@@ -7,7 +7,6 @@ class Finder
 
   def find(path, file_name)
     if Dir.entries(path).include?(file_name)
-      #puts "Your file found: #{path}#{file_name}"
       @found_files << "#{path}#{file_name}"
     else
       Dir.chdir(path) do
